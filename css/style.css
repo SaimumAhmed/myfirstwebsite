@@ -1,0 +1,125 @@
+/*-------------------------------------------GENERAL---------------------------------------------*/
+body {
+	margin: 0;
+	padding: 0;
+	position: relative;
+	width: auto;
+	font-family: 'Arial', sans-serif; /* Fallback for custom fonts */
+	line-height: 1.6;
+	color: #333; /* New default text color */
+	background-color: #f5f5f5; /* Light background for better readability */
+}
+body #page {
+	margin: 0;
+	padding: 0;
+	width: auto;
+	overflow-x: hidden; /* Prevent horizontal scrolling */
+}
+a {
+	text-decoration: none;
+	outline: none;
+	color: inherit; /* Keep link color consistent */
+}
+a:hover {
+	text-decoration: underline;
+	color: #c8c10d; /* Match theme color */
+}
+img {
+	border: none;
+	max-width: 100%; /* Make images responsive */
+	height: auto;
+	display: block;
+	margin: 0 auto;
+}
+
+/*-------------------------------------------RESPONSIVENESS---------------------------------------------*/
+@media (max-width: 768px) {
+	#header div {
+		padding: 20px 10px;
+		text-align: center; /* Center-align for smaller screens */
+	}
+	#header div a.logo {
+		margin: 0 auto;
+	}
+	#header div ul {
+		width: 100%;
+		padding: 0;
+	}
+	#header div ul li {
+		margin: 10px 0; /* Stack menu items */
+	}
+	#body.home div.body div div {
+		width: 100%;
+		padding: 10px;
+	}
+	#body div.footer div ul li {
+		width: 100%;
+		margin-bottom: 20px; /* Stack footer items */
+		text-align: center;
+	}
+}
+
+/*-------------------------------------------BUTTONS---------------------------------------------*/
+button, .button {
+	background-color: #cb3362;
+	color: #ffffff;
+	border: none;
+	padding: 10px 20px;
+	font-family: lato-bold-webfont, Arial, sans-serif;
+	font-size: 16px;
+	text-transform: uppercase;
+	cursor: pointer;
+	border-radius: 4px; /* Rounded corners */
+	transition: background-color 0.3s ease; /* Smooth hover effect */
+}
+button:hover, .button:hover {
+	background-color: #c8c10d; /* Highlight color */
+}
+
+/*-------------------------------------------HEADER---------------------------------------------*/
+#header {
+	background: linear-gradient(90deg, #cb3362, #c8c10d); /* Modern gradient */
+	color: white;
+	padding: 15px 0;
+}
+#header div a.logo img {
+	width: 150px; /* Resize logo for uniformity */
+}
+#header div ul li a {
+	color: #ffffff;
+	padding: 10px 15px;
+	border-radius: 4px; /* Add subtle button style */
+}
+#header div ul li a:hover {
+	background-color: rgba(255, 255, 255, 0.2);
+}
+
+/*-------------------------------------------CARDS---------------------------------------------*/
+.card {
+	background-color: #ffffff;
+	border: 1px solid #ddd;
+	border-radius: 8px;
+	box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+	overflow: hidden;
+	margin-bottom: 20px;
+}
+.card h1, .card p {
+	padding: 15px;
+}
+.card img {
+	border-bottom: 1px solid #ddd; /* Separator line */
+}
+
+/*-------------------------------------------FOOTER---------------------------------------------*/
+#body.home div.footer {
+	background: linear-gradient(90deg, #c8c10d, #cb3362);
+	color: #ffffff;
+	padding: 40px 20px;
+	text-align: center;
+}
+#body.home div.footer div ul li a {
+	color: #ffffff;
+}
+#body.home div.footer div ul li a:hover {
+	text-decoration: underline;
+}
